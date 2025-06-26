@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card - John Smith</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .business-card {
+            width: 100%;
+            max-width: 35rem;
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+        .business-card:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .card-content {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 5rem;
+            height: 5rem;
+            background: linear-gradient(135deg, #3b82f6 0%, #9333ea 100%);
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #111827;
+            margin-bottom: 0.25rem;
+        }
+
+        .title {
+            color: #6b7280;
+            font-size: 0.875rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding-top: 1rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            color: #374151;
+            font-size: 0.875rem;
+        }
+
+        .icon {
+            width: 1.25rem;
+            height: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        .icon.email {
+            color: #3b82f6;
+            font-size: 30px;
+        }
+
+        .icon.phone {
+            color: #10b981;
+        }
+
+        .footer {
+            padding-top: 1rem;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280;
+            font-size: 1rem;
+        }
+
+        /* Responsive design */
+        @media (max-width: 640px) {
+            .card-content {
+                padding: 1.5rem;
+            }
+            
+            .name {
+                font-size: 1.25rem;
+            }
+            
+            .avatar {
+                width: 4rem;
+                height: 4rem;
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 0.5rem;
+            }
+            
+            .card-content {
+                padding: 1.25rem;
+            }
+            
+            .contact-item {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="business-card">
+        <div class="card-content">
+            <div class="avatar">ST</div>
+            <h1 class="name">Strad Tech</h1>
+            <p class="title">Morten Holm</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="icon email">✉</span>
+                    <span>morten@stradtech.dk</span>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="icon phone">📞</span>
+                    <span>11 22 33 44</span>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <p>Kontakt for mere info</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
